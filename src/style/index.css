@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-size: calc(15px + 0.2vw);
+}
+
+html::-webkit-scrollbar,
+div::-webkit-scrollbar {
+	width: 0.6vw;
+}
+
+html::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+	@apply bg-gray-500 rounded-full;
+}
+
+html::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+	@apply bg-gray-300;
+}
+
+body {
+	@apply font-main leading-6 bg-gray-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-bold mb-3;
+}
+
+p {
+	@apply mb-3 text-gray-700;
+}
+
+a {
+	@apply text-blue-500 hover:underline;
+}
